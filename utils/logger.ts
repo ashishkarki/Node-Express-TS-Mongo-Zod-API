@@ -5,10 +5,6 @@ const logger = pino({
   base: {
     pid: false,
   },
-  //   //   target: 'pino-pretty',
-  //   options: {
-  //     colorize: true,
-  //   },
   timestamp: () => `,"time":"${dayjs().format()}"`,
 })
 
